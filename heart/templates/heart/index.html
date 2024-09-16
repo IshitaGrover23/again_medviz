@@ -76,6 +76,11 @@
         <label>Thal:</label><input type="text" name="thal"><br>
         <button type="submit">Predict</button>
     </form>
+    <div class="result-container">
+        <h2>Prediction Result</h2>
+        <p>{{ result }}</p>
+        <a href="{% url 'heart' %}">Predict Again</a>
+    </div>
 </body>
 </html>
 {% endblock %}
